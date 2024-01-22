@@ -4,6 +4,7 @@ import { DidMountDerivedStateProps } from "./DidMountDerivedStateProps";
 import DidUpdate from "./DidUpdate";
 import { ShouldUpdate } from "./ShouldUpdate";
 import { Snapshoot } from "./SnapShoot";
+import { WillUnmount } from "./WillUnmount";
 import { WillUpdate } from "./WillUpdate";
 
 export default class LifecycleMethods extends Component {
@@ -40,6 +41,10 @@ export default class LifecycleMethods extends Component {
         </div>
       </div>
 
+      <h3>Component Unmount Phase</h3>
+      <div style={{ ...styles, width: "100%" }}>
+        <h5>componentWillUnmount()</h5> <WillUnmount />
+      </div>
     </div>
     )
   }
